@@ -111,7 +111,7 @@ let dataSet = [
 		}
 		
 	});
-   var table = $('#projectlist').DataTable( {
+   var table = $('#productList').DataTable( {
 	           
 	lengthChange:true,
 	searching: true,
@@ -123,7 +123,33 @@ let dataSet = [
 		}
 	}
 }); 
-var table = $('#projectlist-1').DataTable( {
+var table = $('#productList-1').DataTable( {
+	           
+	lengthChange:false,
+	searching: false,
+	pageLength:5,
+	language: {
+		paginate: {
+			next: '<i class="fa fa-angle-double-right" aria-hidden="true"></i>',
+		  previous: '<i class="fa fa-angle-double-left" aria-hidden="true"></i>' 
+		}
+	}
+});
+// enquiry
+
+var table = $('#enquiryList').DataTable( {
+	           
+	lengthChange:true,
+	searching: true,
+	pageLength:10,
+	language: {
+		paginate: {
+			next: '<i class="fa fa-angle-double-right" aria-hidden="true"></i>',
+		  previous: '<i class="fa fa-angle-double-left" aria-hidden="true"></i>' 
+		}
+	}
+}); 
+var table = $('#enquiryList-1').DataTable( {
 	           
 	lengthChange:false,
 	searching: false,

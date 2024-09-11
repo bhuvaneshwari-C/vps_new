@@ -1,9 +1,9 @@
 <?php
 session_start();
-// if (isset($_SESSION['username'])) {
-//     header("Location: dashboard.php");
-//     exit();
-// }
+if (isset($_SESSION['username'])) {
+    header("Location: dashboard.php");
+    exit();
+}
 
 include './database_conn.php';
 
@@ -54,7 +54,7 @@ $conn->close();
 <html lang="en">
 
 
-<!-- Mirrored from worldnic.dexignlab.com/xhtml/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Sep 2024 06:00:13 GMT -->
+
 <head>
     <!-- PAGE TITLE HERE -->
 	<title>Login Page</title>
@@ -91,9 +91,6 @@ $conn->close();
     margin: 0 10px;
     transition: color 0.3s ease;
 }
-/* .container{
-	background-color:#0bfea5;
-} */
    </style>
 
 </head>
@@ -103,8 +100,8 @@ $conn->close();
 		<div class="login-aside text-center d-none d-sm-flex flex-column flex-row-auto">
 			<div class="d-flex flex-column-auto flex-column pt-lg-40 pt-15">
 				<div class="text-center mb-4 pt-5">
-					<a href="index.html"><img src="images/favicon.png" class="dark-login" width="160px"  alt=""></a>
-					<!-- <a href="index.html"><img src="images/favicon.png" class="light-login" alt=""></a> -->
+					<img src="images/favicon.png" class="dark-login" width="160px"  alt="">
+					<img src="images/DarkFavicon.png" class="light-login" width="150px" alt="">
 				</div>
 				<h3 class="mb-2">Welcome back!</h3>
 				<p>Your trusted partner in pumping solutions.</p>
@@ -117,9 +114,9 @@ $conn->close();
 					<div class="row no-gutters">
 						<div class="col-xl-12">
 							<div class="auth-form">
-								<div class="text-center d-block d-sm-none mb-4 pt-5">
-									<!-- <a href="index.html"><img src="images/favicon.png" class="dark-login"  alt="" width="100px"></a> -->
-									<!-- <img src="images/favicon.png" class="light-login" alt=""> -->
+								<div class="text-center d-block mb-4 pt-5">
+									<img src="images/favicon.png" class="dark-login"  alt="" width="100px">
+									<img src="images/favicon.png" class="light-login" alt="">
 								</div>
 								
 								<h4 class="text-center mb-4">Admin Login</h4>
@@ -146,7 +143,7 @@ $conn->close();
 										</div>
 									</div>
 									<div class="text-center">
-										<button type="submit" class="btn btn-primary btn-block">Login Now</button>
+										<button type="submit" class="btn btn-block text-white" style="background:#484848;">Login Now</button>
 									</div>
 								</form>
                                 <div class="text-center mt-5">
@@ -186,5 +183,5 @@ $conn->close();
 <script src="js/styleSwitcher.js"></script>
 </body>
 
-<!-- Mirrored from worldnic.dexignlab.com/xhtml/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Sep 2024 06:00:14 GMT -->
+
 </html>
